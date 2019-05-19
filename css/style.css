@@ -1,0 +1,270 @@
+/* ##################################### 
+
+                DEFAULT VALUES:
+
+    Font Family : Roboto Condensed
+
+Colors:
+#211103 - Dark Baker's Choclate
+#3D1308 - Baker's Choclate
+#7B0D1E - Falu Red
+#9F2042 - Brown
+#F8E5EE - cherub
+
+#######################################*/
+
+
+
+/* general css section */
+html,
+body {
+
+    height: 100%;
+
+}
+
+
+body {
+
+    font-family: "Roboto Condensed";
+
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #211103;
+}
+
+p {
+    color: #41464b;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+
+/* #####################################
+
+                HOME
+
+#######################################*/
+
+
+
+#home {
+    height: 100%;
+
+}
+
+#home-cover {
+    height: 100%;
+    background-image:url(../img/bg-photo.jpeg);
+
+    /*  ../ means go one step back and search for img folder */
+
+}
+
+
+#home-content-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+
+}
+
+/* #####################################
+                PARRALAX
+#######################################*/
+.bg-parallax {
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* #####################################
+                BUTTON
+#######################################*/
+
+.btn-general {
+    border-color: #fff;
+    border-width: 3px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    overflow: auto;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: #fff;
+    color: #9F2042;
+}
+
+.btn-brown {
+    border-color: #9F2042;
+    color: #9F2042;
+
+}
+
+.btn-brown:hover,
+.btn-brown:focus {
+    background-color: #9F2042;
+    color: #fff;
+}
+
+/* #####################################
+                ANIMATIONS
+#######################################*/
+#home-cover,
+#home-heading,
+#home-btn {
+    animation-duration: .5s;
+    overflow-x: hidden;
+    
+}
+
+#home-cover {
+    animation-delay: .1s;
+}
+
+#home-heading {
+    animation-delay: .5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+}
+
+/* #####################################
+                CONTENT BOX
+#######################################*/
+
+.content-box {
+    padding: 60px 0px 60px 0px;
+    /*used to give spaces*/
+}
+
+.content-title {
+    font-size: 30px;
+    font-weight: 1000;
+    /*used for font thickness */
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #9F2042;
+    margin: 0 auto 40px auto;
+    /*automatically horizontal alignment */
+}
+
+/* #####################################
+                SERVICES
+#######################################*/
+.service-item {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.service-item-icon {
+    color: #9F2042;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+
+}
+
+.service-item:hover .service-item-icon {
+    color: #fff;
+    background-color: #9F2042;
+}
+
+.service-item-title h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+
+}
+
+.service-item-description p {
+    margin: 0;
+    padding-left: 85px;
+
+}
+
+/* #####################################
+                ABOUT
+#######################################*/
+#about-bg-diagonal {
+    width: 50%;
+    height: 700px;
+    float: right;
+    
+    background-image: url(../img/about.jpeg);
+    border-top: 700px solid transparent;
+    border-left: 200px solid white;
+}
+
+#about-content-box {
+    float: left;
+    height: 700px;
+
+}
+
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+
+#about .content-title-underline {
+    margin: 0 0 30px 0;
+}
+
+#about-description p {
+    margin-bottom: 30px;
+}
+
+#about-btn {
+    text-align: left;
+}
